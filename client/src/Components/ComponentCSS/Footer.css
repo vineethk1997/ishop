@@ -1,0 +1,12 @@
+.footerclass{
+    background-color:rgb(95, 95, 172);
+    color: white;
+    padding: 20px;          
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+
+}

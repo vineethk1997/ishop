@@ -1,0 +1,91 @@
+.placeorder {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.placeorder h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.placeorder .shipping,
+.placeorder .payment-method,
+.placeorder .order-items {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.placeorder .order-summary {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.placeorder .order-summary h2 {
+  font-size: 1.3rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.placeorder .order-summary ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.placeorder .order-summary li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  font-size: 0.95rem;
+}
+
+.placeorder .order-summary .total {
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-top: 1px solid #ccc;
+  padding-top: 0.5rem;
+}
+
+.placeorder button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background-color: #111;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.placeorder button:hover {
+  background-color: #333;
+}
+
+.placeorder .cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.placeorder .cart-item img {
+  width: 50px;
+  margin-right: 1rem;
+  border-radius: 4px;
+}
+
+.placeorder .cart-item .item-name {
+  flex-grow: 1;
+  font-size: 0.95rem;
+  color: #333;
+}

@@ -1,0 +1,28 @@
+.alert {
+  padding: 15px 20px;
+  border-radius: 4px;
+  margin: 10px 0px 0px 60px;       /*top right bottom left*/
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  width:85%;
+
+}
+
+/* Alert Variants */
+.alert-info {
+  background-color: #17a2b8;
+}
+
+.alert-success {
+  background-color: #28a745;
+}
+
+.alert-danger {
+  background-color: #dc3545;
+}
+
+.alert-warning {
+  background-color: #ffc107;
+  color: #212529;
+}

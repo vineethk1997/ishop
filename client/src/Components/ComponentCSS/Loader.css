@@ -1,0 +1,27 @@
+.spinner {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  display: block;
+  border: 10px solid #f3f3f3;       
+  border-top: 10px solid #3498db;    
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
