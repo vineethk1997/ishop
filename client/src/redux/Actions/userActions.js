@@ -38,6 +38,8 @@ import {
 import { ORDER_LIST_MY_RESET } from '../constants/orderConstant'
 
 
+const BASE_URL = process.env.REACT_APP_API_URL || '';
+
 export const login = (email, password) => async (dispatch) => {
     try {
         dispatch({
@@ -51,8 +53,8 @@ export const login = (email, password) => async (dispatch) => {
         }
 
         const { data } = await axios.post(
-            '/api/users/login/',
-            { email, password },  // ✅ Corrected this line
+            `${BASE_URL}/api/users/login/`,
+            { email, password }, 
             config
         )
 
@@ -96,7 +98,7 @@ export const register = (name, email, password) => async (dispatch) => {
         }
 
         const { data } = await axios.post(
-            '/api/users/register/',
+            `${BASE_URL}/api/users/register/`,
             { 'name': name, 'email': email, 'password': password },
             config
         )
@@ -142,7 +144,7 @@ export const getUserDetails = (id) => async (dispatch, getState) => {
         }
 
         const { data } = await axios.get(
-            `/api/users/${id}/`,
+            `${BASE_URL}/api/users/${id}/`,
             config
         )
 
@@ -181,7 +183,7 @@ export const updateUserProfile = (user) => async (dispatch, getState) => {
         }
 
         const { data } = await axios.put(
-            `/api/users/profile/update/`,
+            `${BASE_URL}/api/users/profile/update/`,
             user,
             config
         )
@@ -227,7 +229,7 @@ export const listUsers = () => async (dispatch, getState) => {
         }
 
         const { data } = await axios.get(
-            `/api/users/`,
+            `${BASE_URL}/api/users/`,
             config
         )
 
@@ -266,7 +268,7 @@ export const deleteUser = (id) => async (dispatch, getState) => {
         }
 
         const { data } = await axios.delete(
-            `/api/users/delete/${id}/`,
+            `${BASE_URL}/api/users/delete/${id}/`,
             config
         )
 
@@ -305,7 +307,7 @@ export const updateUser = (user) => async (dispatch, getState) => {
         }
 
         const { data } = await axios.put(
-            `/api/users/update/${user._id}/`,
+            `${BASE_URL}/api/users/update/${user._id}/`,
             user,
             config
         )
